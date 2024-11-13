@@ -36,7 +36,7 @@ export const UI = () => {
     audio.play();
   }, [page]);
 
-  const totalPages = 8;
+  const totalPages = pages.length - 1;
   const goToPage = (newPage) => {
     if (newPage >= 0 && newPage <= totalPages + 1) {
       setPage(newPage);
